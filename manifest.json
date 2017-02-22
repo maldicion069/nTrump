@@ -1,0 +1,15 @@
+{
+	"manifest_version": 2,
+	"name": "nTrump",
+	"version": "1.0",
+	"description": "Replace all images for Donald Trump",
+	"icons": {
+    	"48": "icon48.jpg",
+        "128": "icon128.png"
+    },
+	"content_scripts": [
+	    {
+	      "matches": ["*://*/*"],
+	      "js": ["jquery.js", "ntrump.js"]
+	    }
+  	]
